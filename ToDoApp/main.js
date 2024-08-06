@@ -16,6 +16,7 @@ function addStudent() {
   input.value = "";
 }
 
+
 function handleDelete(index) {
   STUDENTS.splice(index, 1);
   render(STUDENTS);
