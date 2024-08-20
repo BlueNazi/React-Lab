@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>To Do</h1>
+            <img src="https://www.freeiconspng.com/uploads/crescent-moon-png-21.png" alt="Dark Mode"
+                class="toggle-mode" />
+        </div>
+        <div >
+            <header>
+                <input type="text" id="new-todo" placeholder="Create a new todo...">
+            </header>
+        </div>
+        <div class="todo-app">
+
+            <ul id="todo-list" class="todo-list"></ul>
+            <footer>
+                <span id="items-left"></span>
+                <button id="clear-completed">Clear Completed</button>
+            </footer>
+            <nav>
+                <button id="all" class="active">All</button>
+                <button id="active">Active</button>
+                <button id="completed">Completed</button>
+            </nav>
+        </div>
+    </div>
+
+</body>
+
+</html>
