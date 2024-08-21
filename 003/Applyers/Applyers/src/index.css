@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/src/assets/public/1.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 90vh; 
+    direction: rtl; 
+  }
+
+  @font-face {
+  font-family: 'MyPersianFont';
+  src: url('/src/assets/yekan/Yekan.woff') format('woff2'),
+       url('/src/assets/yekan/Yekan.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MyPersianFont', sans-serif;
+}
