@@ -16,7 +16,7 @@ const Header = ({ phoneNumber }) => {
           </ul>
         </nav>
         {phoneNumber ? (
-          <div className="phone-number-display">{phoneNumber}</div> 
+          <div className="phone-number">{phoneNumber}</div> 
         ) : (
           <button className="login-button">ورود / ثبت‌نام</button>
         )}
