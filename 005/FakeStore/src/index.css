@@ -1,0 +1,272 @@
+ body {
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  border-radius: 50%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4fa4ff;
+  color: #fff;
+}
+
+.basket-icon {
+  position: relative;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+#basket-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+#categories {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+#categories button {
+  padding: 1rem;
+  margin: 0.2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+ 
+}
+
+button {
+  padding: 8px 12px;
+  background-color: rgb(69, 224, 255);
+  color: #5a5a5a;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px;
+}
+
+.product {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  height: 40px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+.product p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.product span {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 14px;
+  max-height: 50px; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: normal; 
+  line-height: 1.2; 
+}
+
+.product button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: #218838;
+}
+
+.cart-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.close-cart {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-cart:hover {
+  background-color: #0056b3;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin: auto 100px;
+}
+
+.search input {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 5px;
+  width: 440px;
+}
+
+.search i {
+  color: #888;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 30px;
+  background-color: #004373;
+  border-radius: 50px;
+  right: 40px;
+  transition: background-color 0.5s;
+}
+
+.checkbox-label .fas {
+  position: absolute;
+  font-size: 14px;
+}
+
+.checkbox-label .fa-moon {
+  left: 10px;
+  color: yellow;
+}
+
+.checkbox-label .fa-sun {
+  right: 10px;
+  color: orange;
+}
+
+.ball {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 27px;
+  height: 27px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(30px);
+}
+nav {
+  margin: 10px 0;
+  right: 20px;
+}
+
+.register-button {
+  font-size: 14px;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0;
+}
+
+.remove-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #dc3545;
+  font-size: 16px;
+}
+
+.remove-item:hover {
+  color: #b02a37;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
